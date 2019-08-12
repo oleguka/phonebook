@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonView
 import com.olegulka.phonebook.domain.Phone
 import com.olegulka.phonebook.domain.Views
 import com.olegulka.phonebook.repo.PhoneRepo
-import org.springframework.beans.BeanUtils
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 

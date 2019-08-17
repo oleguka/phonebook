@@ -32,6 +32,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.postgresql:postgresql")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
 
 tasks.withType<KotlinCompile> {

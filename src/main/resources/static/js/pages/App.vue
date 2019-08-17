@@ -1,5 +1,16 @@
 <template>
-    <phone-list :phones="phones" />
+    <v-app>
+        <v-toolbar app>
+            <v-toolbar-title>Phonebook</v-toolbar-title>
+            <v-spacer></v-spacer>
+        </v-toolbar>
+
+        <v-content>
+            <v-container>
+                <phone-list :phones="phones" />
+            </v-container>
+        </v-content>
+    </v-app>
 </template>
 
 <script>

@@ -1,13 +1,13 @@
 <template>
-    <div style="position: relative; width: 300px;">
+    <v-layout align-space-around justify-start column>
         <phone-form :phones="phones" :phoneAttr="phone" />
-        <phone-row v-for="phone in phones"
+        <phone-row v-for="phone in sortedPhones"
                    :key="phone.id"
                    :phone="phone"
                    :editPhone="editPhone"
                    :deletePhone="deletePhone"
                    :phones="phones" />
-    </div>
+    </v-layout>
 </template>
 
 <script>
@@ -22,6 +22,11 @@
         data() {
             return {
                 phone: null
+            }
+        },
+        computed: {
+            sortedPhones() {
+                return this.phones.sort((a, b) => -(a.id - b.id))
             }
         },
         methods: {

@@ -1,7 +1,7 @@
 <template>
     <v-card class="my-2">
         <v-card-text primary-title>
-            <i>({{ phone.id }})</i> {{ phone.name }} + {{ phone.number }}
+            <i>({{ phone.id }})</i> {{ phone.name }} {{ phone.number }}
         </v-card-text>
         <v-card-actions>
             <v-btn value="Edit" @click="edit" small flat round>Edit</v-btn>

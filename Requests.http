@@ -35,3 +35,8 @@ GET http://localhost:9000/phones/searchByNumber?number=%2B7-9994318977
 Accept: application/json
 
 ###
+
+GET http://localhost:9000/phones/saveJson
+Accept: application/json
+
+###

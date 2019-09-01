@@ -26,3 +26,6 @@ GET
 
 GET 
 ```http://localhost:9000/phones/searchByNumber?number=%2B7-9994318900``` - список всех телефонов с данным номером. %2B это код +
+
+GET
+```http://localhost:9000/phones/saveJson```  - Асинхронное? сохранение всех данных на ЖД

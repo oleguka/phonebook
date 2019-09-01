@@ -1,0 +1,37 @@
+POST http://localhost:9000/phones
+Content-Type: application/json
+
+{"name": "nike", "number": "+7-9963334444"}
+
+###
+
+PUT http://localhost:9000/phones/1452
+Content-Type: application/json
+
+{"name": "nike22", "number": "+7-9963334444"}
+
+###
+
+GET http://localhost:9000/phones
+Accept: application/json
+
+###
+GET http://localhost:9000/phones/1402
+Accept: application/json
+
+###
+
+DELETE http://localhost:9000/phones/1402
+Accept: application/json
+
+###
+
+GET http://localhost:9000/phones/searchByName?name=nike
+Accept: application/json
+
+###
+
+GET http://localhost:9000/phones/searchByNumber?number=%2B7-9994318977
+Accept: application/json
+
+###
